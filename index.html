@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sena</title>
+</head>
+
+<body>
+    <script src="./assets/js/main.js"></script>
+    <div class="Portada">
+        <h1 class="Protada__Activity">
+            Resolución a problemas algorítmicos
+            aplicando estructuras <br> de almacenamiento.
+            GA3-220501093-AA3-EV02.
+        </h1>
+        <h1 class="Portada__Aprendiz">
+            Aprendices:
+            <br>
+            <br>
+            <span>Yeison Andres Marroquin Bernal</span>
+            <span>Diego Garces</span>
+        </h1>
+        <h1 class="Portada__Docente">
+            Docente:
+            <br>
+            <br>
+            <span>FRANCISCO ARNALDO VARGAS BERMUDEZ</span>
+        </h1>
+        <h1 class="Portada__Footer" <span>Centro Minero Ambiental</span>
+            <span>Sena Regional Antioquia</span>
+            <span>Tecnologo Analisis y Desarrollo de Software</span>
+            <span>2022-2024</span>
+        </h1>
+    </div>
+    <div class="Introduccion">
+        <h1>Introduccion</h1>
+        <p>
+            En el emocionante mundo del desarrollo web, uno de los primeros pasos hacia la maestría es la capacidad de
+            combinar HTML, CSS y JavaScript para crear proyectos funcionales y atractivos. En este viaje de aprendizaje,
+            nos embarcaremos en un proyecto que no solo mejorará nuestra lógica de programación en JavaScript, sino que
+            también nos permitirá comprender cómo estos tres lenguajes se entrelazan para crear experiencias web
+            dinámicas y efectivas.
+        </p>
+        <br>
+        <p>
+            HTML (HyperText Markup Language) actúa como el esqueleto de nuestras páginas web, proporcionando la
+            estructura y el contenido básico. CSS (Cascading Style Sheets) nos permite dar estilo y diseño a nuestras
+            páginas, asegurando que sean visualmente atractivas y agradables para los usuarios. Por último, JavaScript
+            añade interactividad y funcionalidad a nuestras creaciones, permitiéndonos crear aplicaciones web
+            interactivas y dinámicas.
+        </p>
+        <br>
+        <p>
+            En este proyecto, exploraremos cómo estos tres lenguajes se complementan entre sí y cómo podemos utilizarlos
+            de manera efectiva para crear una aplicación web que no solo funcione, sino que también impresione a
+            nuestros usuarios. A medida que avanzamos en este emocionante viaje, fortaleceremos nuestras habilidades de
+            programación en JavaScript y aprenderemos a aplicar conceptos clave para resolver problemas y crear
+            soluciones web cada vez más sofisticadas. ¡Así que prepárate para sumergirte en el mundo del desarrollo web
+            y elevar tus habilidades al siguiente nivel!
+        </p>
+    </div>
+    <div class="EjercicioOne">
+        <h1>1. <span class="title">Desarrollar un programa que permita calcular el área o perímetro de algunas figuras planas según la
+            siguiente tabla</span>:</h1>
+        <table>
+            <tr>
+                <th class="table__image">Figura</th>
+                <th>Datos</th>
+                <th>Perimetro</th>
+                <th>Área</th>
+            </tr>
+            <tr>
+                <th class="table__image">
+                    <img src="./assets/Images/Triangulo.png" alt="">
+                </th>
+                <th class="table__input">
+                    <form id="form">
+                        <div class="input">
+                            <label for="">A:</label>
+                            <input type="number" id="A">
+                        </div>
+                        <div class="input">
+                            <label for="">B:</label>
+                            <input type="number" id="B">
+                        </div>
+                        <div class="input">
+                            <label for="">C:</label>
+                            <input type="number" id="C">
+                        </div>
+                        <div class="input">
+                            <label for="">H:</label>
+                            <input type="number" id="H">
+                        </div>
+                    </form>
+                </th>
+                <th class="peri">
+                    <h2 id="PerimetroT"></h2>
+                     <br>
+                    <button onclick="figuraOnePerimetro()">Calcular</button>
+                </th>
+                <th class="peri">
+                    <h2 id="AreaT"></h2>
+                     <br>
+                    <button onclick="figuraOneArea()">Calcular</button>
+                </th>
+            </tr>
+            <tr>
+                <th class="table__image">
+                    <img src="./assets/Images/Reactangulo.png" alt="">
+                </th>
+                <th class="table__input">
+                     <form>
+                        <div class="div">
+                            <label for="">A</label>
+                            <input type="number" id="ReactanguloA">
+                        </div>
+                        <div class="div">
+                            <label for="">B</label>
+                            <input type="number" id="ReactanguloB">
+                        </div>
+                    </form>
+                </th>
+                <th>
+                    <h2 id="PerimetroR"></h2>
+                    <button onclick="figuraTwoPerimetro()">Calcular</button>
+                </th>
+                <th>
+                    <h2 id="AreaR"></h2>
+                    <button onclick="figuraTwoArea()">Calcular</button>
+                </th>
+            </tr>
+            <tr>
+                <th class="table__image">
+                    <img src="./assets/Images/Cuadrado.png" alt="">
+                </th>
+                <th class="table__input">
+                    <form action="">
+                        <div>
+                            <label for="">A</label>
+                            <input type="number" id="CuadradoA">
+                        </div>
+                    </form>
+                </th>
+                <th>
+                    <h2 id="PerimetroC"></h2>
+                    <button onclick="figuraThreePerimetro()">Calcular</button>
+                </th>
+                <th>
+                    <h2 id="AreaC"></h2>
+                    <button onclick="figuraThreeArea()">Calcular</button>
+                </th>
+            </tr>
+            <tr>
+                <th class="table__image">
+                    <img src="./assets/Images/Círculo.png" alt="">
+                </th>
+                <th  class="table__input">
+                    <form action="">
+                      <div>
+                        <label for="">R:</label>
+                        <input type="text" id="Radio">
+                      </div>
+                    </form>
+               
+                </th>
+                <th>
+                    <h2 id="PerimetroCirculo"></h2>
+                    <button onclick="figuraFourPerimetro()">Calcular</button>
+                </th>
+                <th>
+                    <h2 id="AreaCirculo"></h2>
+                    <button onclick="figuraFourArea()">Calcular</button>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
