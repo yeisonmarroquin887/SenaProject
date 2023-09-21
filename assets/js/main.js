@@ -1,6 +1,29 @@
 const array = [];
 const array1 = [];
 const array2 = [];
+const arrayPersonas = [];
+const Personas = {
+    Nombre: "",
+    Apellidos: "",
+    Cedula: "",
+    Email: "",
+    CiudadDeRecidencia: "",
+    CiudadDeOrigen: "",
+    Canciones: [
+      Cancion1 = {
+        nombre: "",
+        Artista: ""
+      },
+      Cancion2 = {
+        nombre: "",
+        Artista: ""
+      },
+       Cancion3 = {
+        nombre: "",
+        Artista: ""
+      }
+    ]
+};
 
 function figuraOnePerimetro() {
 const A = parseFloat(document.getElementById('A').value);
@@ -157,3 +180,62 @@ function vectorFinal(){
     }
 
 }
+
+//Ejercicio 4
+
+
+function Emisora(){
+    const nombre = document.getElementById("nombre").value
+    Personas.Nombre = nombre
+    const apellidos = document.getElementById("apellidos").value
+    Personas.Apellidos = apellidos
+    const cedula = document.getElementById("cedula").value;
+    Personas.Cedula = cedula;
+    const email = document.getElementById("email").value;
+    Personas.Email = email;
+    const ciudadRecidencia = document.getElementById("ciudadRecidencia").value;
+    Personas.CiudadDeRecidencia = ciudadRecidencia;
+    const ciudadOrigen = document.getElementById("ciudadOrigen").value;
+    Personas.CiudadDeOrigen = ciudadOrigen;
+    const cancionOne = document.getElementById("cancionOne").value;
+    Personas.Canciones[0].nombre = cancionOne;
+    const artistaOne = document.getElementById("artistaOne").value;
+    Personas.Canciones[0].Artista = artistaOne
+    const cancionTwo = document.getElementById("cancionTwo").value;
+    Personas.Canciones[1].nombre = cancionTwo
+    const artistaTwo = document.getElementById("artistaTwo").value;
+    Personas.Canciones[1].Artista = artistaTwo
+    const cancionThree = document.getElementById("cancionThree").value;
+    Personas.Canciones[2].nombre = cancionThree
+    const artistaThree = document.getElementById("artistaThree").value;
+    Personas.Canciones[2].Artista = artistaThree
+
+    arrayPersonas.push(Personas)
+    const formulario = document.getElementById("forme");
+    formulario.reset();
+  
+    const Carta = document.getElementById("person")
+    Carta.innerHTML += ""
+
+  
+  
+      const row = `
+       <div class="carta">
+          <h1> <span>Nombre:</span> ${arrayPersonas[0].Nombre}</h1>
+          <h2> <span>Apellidos:</span> ${arrayPersonas[0].Apellidos}</h2>
+          <h2> <span>No.CC: </span>${arrayPersonas[0].Cedula}</h2>
+          <h2> <span>Correo:</span> ${arrayPersonas[0].Email}</h2>
+          <h2> <span>Ciudad de residencia:</span> ${arrayPersonas[0].CiudadDeRecidencia}</h2>
+          <h2> <span>Ciudad de origen:</span> ${arrayPersonas[0].CiudadDeOrigen}</h2>
+          <h2> <span>Primera cancion:</span> ${arrayPersonas[0].Canciones[0].nombre}</h2>
+          <h2> <span>Artista</span>: ${arrayPersonas[0].Canciones[0].Artista}</h2>
+          <h2> <span>Segunda Cancion:</span> ${arrayPersonas[0].Canciones[1].nombre}</h2>
+          <h2> <span>Artista</span>: ${arrayPersonas[0].Canciones[1].Artista}</h2>
+          <h2> <span>Tercra cancion</span> ${arrayPersonas[0].Canciones[2].nombre}</h2>
+          <h2> <span>Artista</span>: ${arrayPersonas[0].Canciones[2].Artista}</h2>
+       </div>
+       `;
+  
+      Carta.innerHTML += row;
+}
+Emisora()

@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <script src="./assets/js/main.js"></script>
     <div class="Portada">
         <h1 class="Protada__Activity">
             Resolución a problemas algorítmicos
@@ -272,6 +271,89 @@
          </div>
 
     </div>
+    <div class="EjercicioFour">
+        <h1>
+            4. <span>
+                Una emisora con presencia en diferentes ciudades desea conocer el rating de canciones y cantantes más
+escuchados (sonados) en este semestre del año. Por lo tanto, se ha pedido a estudiantes del SENA del
+programa de tecnólogo en análisis y desarrollo de software desarrollar una solución que permita conocer
+la respuesta de 6 personas con relación a sus gustos musicales. Con fines administrativos y realizar una
+rifa entre las personas encuestadas, la emisora desea poder registrar de las personas entrevistadas su
+nombre, número de identificación (cédula), fecha de nacimiento, correo electrónico, ciudad de residencia,
+ciudad de origen. Además, se deberá poder almacenar el artista y título de hasta 3 canciones favoritas en
+GFPI-F-135 V01
+cada una de las personas que se ingrese, teniendo en cuenta lo anterior, se sugiere que la solución deberá
+mostrar un menú que permite las siguientes opciones: <br>
+            </span>
+            a. <span>Agregar una persona con los datos que se listan anteriormente.</span>
+            <br>
+            b. <span>Mostrar la información personal de una persona particular por medio de su posición en el vector. </span>
+        </h1>
+
+        <div>
+            <h1>Registrar Usuario</h1>
+            <form id="forme" onsubmit="event.preventDefault(), Emisora()" action="">
+                <div>
+                    <label for="">Nombres</label>
+                    <input type="text" id="nombre">
+                </div>
+                <div>
+                    <label for="">Apellidos</label>
+                    <input type="text" id="apellidos">
+                </div>
+                <div>
+                    <label for="">Numero de identificación</label>
+                    <input type="number" id="cedula">
+                </div>                <div>
+                    <label for="">Fecha de nacimiento</label>
+                    <input type="date" id="nacimiento">
+                </div>                <div>
+                    <label for="">Correo electrónico</label>
+                    <input type="email" id="email">
+                </div>                <div>
+                    <label for="">Ciudad de residencia</label>
+                    <input type="text" id="ciudadRecidencia">
+                </div>                <div>
+                    <label for="">Ciudad de origen</label>
+                    <input type="text" id="ciudadOrigen">
+                </div>                <div>
+                    <label for="">Primera Cancion</label>
+                    <input type="text" id="cancionOne">
+                </div>   
+                 <div>
+                    <label for="">Artista</label>
+                    <input type="text" id="artistaOne">
+                </div>  
+                <div>
+                    <label for="">Cancion 2</label>
+                    <input type="text" id="cancionTwo">
+                </div> 
+                <div>
+                    <label for="">Artista</label>
+                    <input type="text" id="artistaTwo">
+                </div> 
+                <div>
+                    <label for="">Cancion 3</label>
+                    <input type="text" id="cancionThree">
+                </div> 
+                <div>
+                    <label for="">Artista</label>
+                    <input type="text" id="artistaThree">
+                </div> 
+                <button>Enviar</button>
+            </form>
+        </div>
+    </div>
+        <div class="Oyentes">
+            <h1>Usuarios de la Emisora</h1>
+            <div class="person" id="person">
+
+            </div>
+
+        </div>
+    
+
+        <script src="./assets/js/main.js"></script>
 
 </body>
 
