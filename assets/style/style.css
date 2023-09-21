@@ -190,6 +190,83 @@ body {
 
 
 
+.EjercicioThree {
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    max-width: 58em;
+    margin: auto;
+    padding: 3em;
+    color: red;
+    border-radius: 8px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4em;
+    gap: 4em;
+}
+
+.EjercicioThree_text {
+    color: blue;
+}
+
+.EjercicioThree__form {
+    display: grid;
+}
+
+
+.EjercicioThree__form > div  {
+  display: flex;
+  justify-content: center;
+  margin-right: 9em;
+  padding-top: 1em;
+}
+
+.EjercicioThree__form  > label {
+    font-size: 1.5em;
+}
+
+.EjercicioThree__form > div > input {
+    width: 100%;
+    max-width: 10em;
+    border: none;
+    background-color: rgb(169, 169, 231);
+    border-radius: 1em 0px 0px 1em;
+    padding: 5px;
+    text-align: center;
+    color: red;
+}
+
+.EjercicioThree__form > div > button {
+ color: blue;
+ background-color: rgb(228, 196, 196);
+ border-radius: 0em 1em 1em 0em;
+}
+
+.EjercicioThree__form > div > button:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgb(168, 165, 221);
+    border-radius: 0em 1em 1em 0em;
+}
+
+.EjercicioThree__vector > h2 {
+   color: blue;
+}
+#result{
+    background-color: rgb(179, 179, 231);
+    padding: 10px;
+    color: red;
+    width: 100%;
+    max-width: 20em;
+    text-align: center;
+    border-radius: 1em;
+}
+
+
+
+
+
 
 
 
