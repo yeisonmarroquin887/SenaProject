@@ -96,6 +96,8 @@ body {
 .EjercicioOne > table {
     background-color: rgb(27, 19, 99);
     width: 100%;
+    border-radius: 1px;
+    border: 1px solid rgb(27, 19, 99);
 }
  tr {
     background-color: rgb(228, 228, 236);
@@ -147,7 +149,6 @@ body {
     0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     max-width: 58em;
-    height: 110vh;
     margin: auto;
     padding: 3em;
     color: red;
@@ -156,9 +157,34 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 4em;
-    gap: 7em;
+    gap: 4em;
 }
 .EjercicioTwo > h1 > span {
+    color: blue;
+}
+.EjercicioTwo > form {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.EjercicioTwo > form > label {
+    font-size: 2em;
+}
+.EjercicioTwo > form > input {
+    font-size: 2em;
+    border: none;
+    background-color: rgb(206, 206, 230);
+    border-radius: .5em 1em 1em .5em;
+    width: 100%;
+    max-width: 6em;
+}
+.tableTwo {
+    background-color: rgb(10, 11, 70);
+}
+.barra {
+    font-size: 2em;
+}
+.Preguntas {
     color: blue;
 }
 

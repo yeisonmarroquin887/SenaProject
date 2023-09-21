@@ -178,13 +178,75 @@
         </table>
     </div>
     <div class="EjercicioTwo">
-        <h1>1. <span>Desarrollar un programa que permita almacenar las edades de un grupo de 10 personas en un vector de
+        <h1>
+            2. 
+            <span>Desarrollar un programa que permita almacenar las edades de un grupo de 10 personas en un vector de
             enteros y luego determine la cantidad de personas que son menores de edad, mayores de edad, cuántos
             adultos mayores, la edad más baja, la edad más alta y el promedio de edades ingresadas. Para el ejercicio
             anterior suponga que un adulto mayor debe tener una edad igual o superior a 60. Debe validar para cada
             ingreso que los valores estén en un rango entre 1 y 120 años. En caso de error deberá notificar y solicitar
             un nuevo valor. 
-            </span> </h1>
+            </span> 
+        </h1>
+       <form id="formTwo" onsubmit="event.preventDefault(); Edades()">
+        <label for="Ages">Ingresa la edad de un usuario:</label>
+        <input type="number" id="Ages"  required>
+        <button type="submit">Enviar</button>
+    </form>
+    <table class="tableTwo">
+        <tr class="barra">
+            <th>Preguntas</th>
+            <th>Edades</th>
+        </tr>
+        <tr>
+            <th>
+                <h2 class="Preguntas">Menores de edad:</h2>
+            </th>
+            <th>
+                <h2 id="menores"></h2>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <h2 class="Preguntas">Mayores de edad:</h2>
+            </th>
+            <th>
+                <h2 id="mayores"></h2>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <h2 class="Preguntas">Adultos mayores:</h2>
+            </th>
+            <th>
+                <h2 id="adultos"></h2>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <h2 class="Preguntas">Edad más baja:</h2>
+            </th>
+            <th>
+                <h2 id="min"></h2>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <h2 class="Preguntas">Edad más alta:</h2>
+            </th>
+            <th>
+                <h2 id="max"></h2>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <h2 class="Preguntas">Promedio de edades ingresadas:</h2>
+            </th>
+            <th>
+                <h2 id="promedio"></h2>
+            </th>
+        </tr>
+    </table>
     </div>
 
 </body>
