@@ -239,3 +239,22 @@ function Emisora(){
       Carta.innerHTML += row;
 }
 Emisora()
+
+function Menu(){
+    const formulario = document.getElementById("forme");
+    formulario.classList.remove("oculto")
+}
+Menu();
+function clos(){
+  const formulario = document.getElementById("forme");
+  formulario.classList.add("oculto")
+}
+clos()
+function oyente(){
+  const formulario = document.getElementById("perso");
+  formulario.classList.remove("oculto")
+}
+function oyenteclose(){
+  const formulario = document.getElementById("perso");
+  formulario.classList.add("oculto")
+}

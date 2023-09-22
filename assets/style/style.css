@@ -196,7 +196,7 @@ body {
     0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     max-width: 58em;
-    height: 138vh;
+    height: 152vh;
     margin: auto;
     padding: 3em;
     color: red;
@@ -281,13 +281,88 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 4em;
-    gap: 4em;
+    gap: 2em;
     position: relative;
 }
 .EjercicioFour > h1 > span {
     color: blue; 
 }
 
+#forme {
+    background-color: rgba(112, 112, 233, 0.233);
+    padding: 2em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+}
+#forme > div  {
+    display: flex;
+    gap: 2em;
+}
+#forme > h1  {
+    border-bottom: 2px solid red;
+    width: 10em;
+    color: blue;
+}
+#forme > button  {
+    margin-top: 1em;
+    width: 100%;
+    max-width: 15em;
+    height: 2em;
+    color: blue;
+    background-color: rgba(248, 239, 239, 0.979);
+}
+#forme > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+#forme > div > div > div {
+    display: grid;
+    gap: .2em;
+}
+#forme > div > div > div > input {
+    border: none;
+    padding: .3em;
+    border-radius: 1em;
+    text-align: center;
+    color: blue;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.171);
+}
+.in {
+    display: grid;
+    gap: .2em;
+}
+.in > div > input {
+    padding: 1em;
+}
+.oculto {
+transform: scale(0);
+height: 0;
+}
+#clo {
+   background-color: aqua;
+}
+#mostrarFormulario {
+    height: 2em;
+    background-color: blue;
+    color: white;
+    border: 2px solid red;
+}
+#mostrarFormulario:hover {
+    color: red;
+}
+#mostrarOyentes {
+    height: 2em;
+    background-color: blue;
+    color: white;
+    border: 2px solid red;
+}
+#mostrarOyentes:hover {
+    color: red;
+}
 .Oyentes {
     box-shadow:
     inset 0 -3em 3em rgba(0, 0, 0, 0.1),
@@ -306,6 +381,16 @@ border-radius: 1em;
 }
 .Oyentes > h1 {
     border-bottom: 2px solid blue;
+}
+#perso {
+    display: grid;
+}
+#perso > button {
+    width: 10em;
+    height: 2em;
+    background-color: rgba(238, 76, 76, 0.959);
+    color: white;
+    margin-left: 4em;
 }
 #person {
     display: flex;

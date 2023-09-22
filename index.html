@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Sena</title>
 </head>
-
+<script src="./assets/js/main.js"></script>
 <body>
     <div class="Portada">
         <h1 class="Protada__Activity">
@@ -79,19 +79,19 @@
                     <form id="form">
                         <div class="input">
                             <label for="">A:</label>
-                            <input type="number" id="A">
+                            <input type="number" id="A" required>
                         </div>
                         <div class="input">
                             <label for="">B:</label>
-                            <input type="number" id="B">
+                            <input type="number" id="B" required>
                         </div>
                         <div class="input">
                             <label for="">C:</label>
-                            <input type="number" id="C">
+                            <input type="number" id="C" required>
                         </div>
                         <div class="input">
                             <label for="">H:</label>
-                            <input type="number" id="H">
+                            <input type="number" id="H" required>
                         </div>
                     </form>
                 </th>
@@ -114,11 +114,11 @@
                      <form>
                         <div class="div">
                             <label for="">A</label>
-                            <input type="number" id="ReactanguloA">
+                            <input type="number" id="ReactanguloA" required>
                         </div>
                         <div class="div">
                             <label for="">B</label>
-                            <input type="number" id="ReactanguloB">
+                            <input type="number" id="ReactanguloB" required>
                         </div>
                     </form>
                 </th>
@@ -139,7 +139,7 @@
                     <form action="">
                         <div>
                             <label for="">A</label>
-                            <input type="number" id="CuadradoA">
+                            <input type="number" id="CuadradoA" required>
                         </div>
                     </form>
                 </th>
@@ -156,11 +156,11 @@
                 <th class="table__image">
                     <img src="./assets/Images/Círculo.png" alt="">
                 </th>
-                <th  class="table__input">
+                <th  class="table__input" >
                     <form action="">
                       <div>
                         <label for="">R:</label>
-                        <input type="text" id="Radio">
+                        <input type="text" id="Radio" required>
                       </div>
                     </form>
                
@@ -258,7 +258,7 @@
         <form id="EjercicioThree_foor" class="EjercicioThree__form" onsubmit="event.preventDefault(), vector()">
                 <label for="">Ingresa 10 numero 5 para  el primer <br> <br> vector y 5 para el segundo:</label>            
             <div>
-                 <input type="number" id="Arr1">
+                 <input type="number" id="Arr1" required>
             <button>enviar</button>               
             </div>
 
@@ -291,70 +291,88 @@ mostrar un menú que permite las siguientes opciones: <br>
         </h1>
 
         <div>
-            <h1>Registrar Usuario</h1>
-            <form id="forme" onsubmit="event.preventDefault(), Emisora()" action="">
+             <button id="mostrarFormulario", onclick="Menu()"">Agregar Persona</button>
+             <button id="mostrarOyentes" onclick="oyente()">Mostrar oyentes</button>
+            <form class="oculto" id="forme" onsubmit="event.preventDefault(), Emisora()" action="">
+                <button id="clo" onclick="clos()">Cerrar</button>
+                <h1>Registrar Usuario</h1>
                 <div>
-                    <label for="">Nombres</label>
-                    <input type="text" id="nombre">
+                    <div>
+                        <div>
+                            <label for="">Nombres:</label>
+                            <input type="text" id="nombre" required>
+                        </div>
+                        <div>
+                            <label for="">Apellidos:</label>
+                            <input type="text" id="apellidos" required>
+                        </div>
+                        <div>
+                            <label for="">Numero de identificación:</label>
+                            <input type="number" id="cedula" required>
+                        </div>                <div>
+                            <label for="">Fecha de nacimiento:</label>
+                            <input type="date" id="nacimiento" required>
+                        </div>                <div>
+                            <label for="">Correo electrónico:</label>
+                            <input type="email" id="email" required>
+                        </div>                <div>
+                            <label for="">Ciudad de residencia:</label>
+                            <input type="text" id="ciudadRecidencia" required>
+                        </div>
+                    </div>
+    
+                    <div class="in">
+                        <div>
+                            <label for="">Ciudad de origen:</label>
+                            <input type="text" id="ciudadOrigen" required>
+                        </div>                <div>
+                            <label for="">Primera Cancion:</label>
+                            <input type="text" id="cancionOne" required>
+                        </div>   
+                         <div>
+                            <label for="">Artista:</label>
+                            <input type="text" id="artistaOne" required>
+                        </div>  
+                        <div>
+                            <label for="">Cancion 2:</label>
+                            <input type="text" id="cancionTwo" required>
+                        </div> 
+                        <div>
+                            <label for="">Artista:</label>
+                            <input type="text" id="artistaTwo"required>
+                        </div> 
+                        <div>
+                            <label for="">Cancion 3:</label>
+                            <input type="text" id="cancionThree" required>
+                        </div> 
+                        <div>
+                            <label for="">Artista:</label>
+                            <input type="text" id="artistaThree" required>
+                        </div> 
+                   
+                    </div>
                 </div>
-                <div>
-                    <label for="">Apellidos</label>
-                    <input type="text" id="apellidos">
-                </div>
-                <div>
-                    <label for="">Numero de identificación</label>
-                    <input type="number" id="cedula">
-                </div>                <div>
-                    <label for="">Fecha de nacimiento</label>
-                    <input type="date" id="nacimiento">
-                </div>                <div>
-                    <label for="">Correo electrónico</label>
-                    <input type="email" id="email">
-                </div>                <div>
-                    <label for="">Ciudad de residencia</label>
-                    <input type="text" id="ciudadRecidencia">
-                </div>                <div>
-                    <label for="">Ciudad de origen</label>
-                    <input type="text" id="ciudadOrigen">
-                </div>                <div>
-                    <label for="">Primera Cancion</label>
-                    <input type="text" id="cancionOne">
-                </div>   
-                 <div>
-                    <label for="">Artista</label>
-                    <input type="text" id="artistaOne">
-                </div>  
-                <div>
-                    <label for="">Cancion 2</label>
-                    <input type="text" id="cancionTwo">
-                </div> 
-                <div>
-                    <label for="">Artista</label>
-                    <input type="text" id="artistaTwo">
-                </div> 
-                <div>
-                    <label for="">Cancion 3</label>
-                    <input type="text" id="cancionThree">
-                </div> 
-                <div>
-                    <label for="">Artista</label>
-                    <input type="text" id="artistaThree">
-                </div> 
-                <button>Enviar</button>
+               
+          <button>Enviar</button>
             </form>
+            
         </div>
     </div>
         <div class="Oyentes">
             <h1>Usuarios de la Emisora</h1>
-            <div class="person" id="person">
+            <div class="oculto"  id="perso">
+                <button onclick="oyenteclose()">Cerrar</button>
+                <br>
+            <div  class="person" id="person">
 
+            </div> 
             </div>
 
-        </div>
-    
 
-        <script src="./assets/js/main.js"></script>
+        </div>
+
 
 </body>
+
 
 </html>
